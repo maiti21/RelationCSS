@@ -1,0 +1,40 @@
+/*********************/
+/* Relation modification */
+/*********************/
+
+relation[type=route][route=bus] way|z18-{
+	text:tr("Bus route, Do not break Relation!");
+	text-color: #F24FFF;
+	text-halo-color:#FFFFFF;
+	font-size: 16;
+	/*color: #F24FFF;*/
+}
+
+relation[type=route][route=railway] way|z18-{ 
+	text:tr("Railway, Do not break!");
+	text-color: #014B00;
+	text-halo-color:#FFFFFF;
+	font-size: 16;
+	/*color: blue;*/
+}
+relation[type=route][route=bicycle] way|z18-{
+	text:tr("Do not break Bicycle Route!");
+	text-color: #FF6C00;
+	text-halo-color:#FFFFFF;
+	font-size: 14;
+	/*color: yellow;*/
+}
+
+relation[restriction] way|z17-{ 
+	text:tr("Related with Turn Restriction!");
+	text-color: #1700FF;
+	text-halo-color:#FFFFFF;
+	font-size: 14;
+	/*color: #6FE5FF;*/
+}
+
+way[highway=corridor] {
+	width:2;
+    dashes: 4,4;
+	color: #CE55D2;
+}
